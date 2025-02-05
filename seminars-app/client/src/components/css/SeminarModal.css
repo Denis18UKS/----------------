@@ -1,0 +1,112 @@
+/* src/components/css/SeminarModal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Более заметное затемнение */
+    backdrop-filter: blur(4px); /* Лёгкий эффект размытия */
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff; /* Чистый белый */
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    width: 450px;
+    max-width: 90%;
+}
+
+.modal h2 {
+    margin-top: 0;
+    font-size: 1.6em;
+    text-align: center;
+    color: #222; /* Чуть темнее, чем было */
+    font-weight: bold;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal label {
+    font-weight: 600;
+    margin-top: 14px;
+    color: #333; /* Более контрастный серый */
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 1em;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s;
+    width: -webkit-fill-available;
+
+}
+
+.modal input:focus,
+.modal textarea:focus {
+    border-color: #3b82f6; /* Более насыщенный синий */
+    background-color: #eef4ff; /* Лёгкий голубой фон */
+    outline: none;
+}
+
+.modal textarea {
+    resize: vertical;
+    height: 130px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.modal button {
+    flex: 1;
+    margin: 0 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.modal button[type="submit"] {
+    background: #3b82f6; /* Насыщенный голубой */
+    color: white;
+    box-shadow: 0 3px 6px rgba(59, 130, 246, 0.3);
+}
+
+.modal button[type="submit"]:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+.modal button[type="button"] {
+    background: #ef4444; /* Яркий, но мягкий красный */
+    color: white;
+    box-shadow: 0 3px 6px rgba(239, 68, 68, 0.3);
+}
+
+.modal button[type="button"]:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}

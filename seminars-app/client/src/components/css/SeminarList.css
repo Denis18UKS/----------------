@@ -1,0 +1,78 @@
+/* src/components/SeminarList.css */
+
+.seminar-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 12px;
+    background-color: #f8f8fc; /* Светлый фон с лёгким голубым подтоном */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.seminar-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid #d7d7d7;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.seminar-item:last-child {
+    border-bottom: none;
+}
+
+.seminar-item:hover {
+    background-color: #e8f0ff; /* Лёгкий голубой при наведении */
+}
+
+.seminar-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.seminar-details {
+    flex: 1;
+}
+
+.seminar-title {
+    font-size: 1.6em;
+    margin: 0 0 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.seminar-description {
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.seminar-date-time {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.seminar-buttons {
+    margin-top: 12px;
+}
+
+.seminar-button {
+    margin-right: 10px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #4285f4; /* Насыщенный, но не кричащий синий */
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.seminar-button:hover {
+    background-color: #346ecc;
+    transform: scale(1.05);
+}
